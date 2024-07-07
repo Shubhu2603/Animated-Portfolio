@@ -48,6 +48,7 @@
                     padding-top: 70px;
 
                     @include mobile{
+                        padding-top: 0%;
                         width: 100%;
                         max-height: 300px;
                     }
@@ -78,8 +79,7 @@
                     text-align: center;
                     align-items: center;
                     padding-bottom:150px;
-                    padding-left: 20%;
-                    padding-right: 20%;
+
                 }
                 .title{
                     font-size: 50px;
@@ -102,6 +102,8 @@
                     justify-content: center;
                     @include mobile{
                         font-size: 16px;
+                        padding-left: 15%;
+                        padding-right: 15%;
                     }
                 }
                 button{
