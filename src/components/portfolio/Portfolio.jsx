@@ -92,7 +92,7 @@ const Single=({item})=>{
                     <h2 className='title'>{item.title}</h2>
                     
                     <p>{item.desc}</p>
-                    {item.id!==3 &&<button onClick={handleClick}>See Demo</button>}
+                    {item.id!==3 &&<button onClick={handleClick}>See More</button>}
                     {item.id===3 && <span>NOT permitted to distribute or publically display any part of this project</span>}
                     
                 </motion.div>
