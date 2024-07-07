@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
-import "./toggleButton.scss"
+import "./togglebutton.scss"
 
 export default function ToggleButton({setOpen}) {
   return (
