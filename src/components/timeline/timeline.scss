@@ -7,6 +7,10 @@
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
+
+    @include mobile{
+      padding-top: 0px;
+    }
   }
   
   .timeline.visible {
@@ -33,6 +37,10 @@
     transform: translateX(-50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     transition-delay: 0.2s;
+
+  
+    
+    
   }
   
   .timeline.visible .event {
@@ -56,6 +64,9 @@
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    @include mobile{
+      padding: 15px;
+    }
   }
   
   .event-content:hover {
@@ -81,18 +92,28 @@
     margin: 0;
     color: #333;
     font-size: 16px;
+    @include mobile{
+      font-size: 12px
+    }
   }
   
   .event h4 {
     margin: 10px 0;
     color: #fff;
     font-size: 20px;
+    @include mobile{
+      font-size: 15px
+    }
+
   }
   
   .event p {
     margin: 0;
     color: #f0f0f0;
     font-size: 14px;
+    @include mobile{
+      font-size: 10px
+    }
   }
   
   @include mobile {
