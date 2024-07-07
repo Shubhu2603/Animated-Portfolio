@@ -48,7 +48,7 @@
                     padding-top: 70px;
 
                     @include mobile{
-                        padding-top: 7%;
+                        padding-top: 15%;
                         width: 100%;
                         max-height: 300px;
                     }
@@ -73,7 +73,7 @@
                 span{
                     color:orange;
                     @include mobile{
-                        padding: 0px 20px;
+                        padding: 0px 30px;
                     }
                 }
                 @include mobile{
@@ -81,6 +81,7 @@
                     align-items: center;
                     text-align: center;
                     align-items: center;
+                    padding-top: 10px;
                     padding-bottom:150px;
 
                 }
@@ -91,7 +92,7 @@
                     align-self: flex-start;
                     text-align: left;
                     @include mobile{
-                        font-size: 30px;
+                        font-size: 25px;
                         align-self: center;
                         align-items: center;
                         text-align: center;
@@ -105,8 +106,8 @@
                     justify-content: center;
                     @include mobile{
                         font-size: 16px;
-                        padding-left: 15%;
-                        padding-right: 15%;
+                        padding-left: 10%;
+                        padding-right: 10%;
                     }
                 }
                 button{
@@ -115,7 +116,9 @@
                     width:150px;
                     height: 30px;
                     border:2px solid orange;
+                    color:#0c0c1d;
                     cursor: pointer;
+                    
 
                     &:hover{
                         background-color: transparent;
