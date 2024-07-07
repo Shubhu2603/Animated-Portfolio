@@ -1,0 +1,86 @@
+@import "../../app.scss";
+
+.hero {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+  }
+  
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure relative positioning for absolute children */
+  
+    .textContainer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+      @include mobile{
+        height: 50%;
+        width: 100%
+    }
+    }
+  
+    h2 {
+      font-size: 30px;
+      color: rebeccapurple;
+      letter-spacing: 10px;
+    }
+  
+    h1 {
+      padding: 0px 120px;
+      font-size: 60px;
+
+      @include mobile{
+        font-size: 36px;
+    }
+    }
+  
+    img {
+      width: 50px;
+    }
+  
+    .buttons {
+      position: relative; /* Ensure stacking context for z-index to work */
+      z-index: 2; /* Ensure buttons are above other content */
+      display: flex;
+      justify-content: center;
+  
+      button {
+        padding: 20px;
+        border: 3px solid white;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        margin-right: 20px;
+        font-weight: 800;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: white;
+          color: #111132;
+        }
+      }
+    }
+  
+    .slidingTextContainer {
+      position: absolute;
+      z-index: 1; /* Ensure sliding text is behind buttons */
+      font-size: 50vh;
+      bottom: -120px;
+      white-space: nowrap;
+      color: #ffffff09;
+      font-weight: bold;
+      width: 350%;
+      user-select: none;
+    }
+  }
+  
