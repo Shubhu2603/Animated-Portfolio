@@ -45,7 +45,7 @@
 
         @include mobile{
             width: 60%;
-            padding-top: 10px;
+            padding-top: 5px;
         }
 
         .phonesvg{
@@ -86,6 +86,7 @@
                 border: 2px solid orange;
                 cursor: pointer;
                 font-weight: 500;
+                color:#0c0c1d;
 
                 @include mobile{
                     font-size: 16px;
